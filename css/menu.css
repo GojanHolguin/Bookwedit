@@ -1,0 +1,106 @@
+header{
+	position: fixed;
+	/* width: 100%; */
+	top: 0;
+	left: 0;
+}
+
+header #boton-menu{
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.navegacion2{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 0;
+	height: 100vh;
+	background: rgba(0,0,0,.0);
+	transition: background .3s;
+}
+
+.navegacion2 ul{
+	width: 320px;
+	height: 100%;
+	background: #fff;
+	list-style: none;
+
+	position: absolute;
+	top: 0;
+	left: -320px;
+
+	transition: left .4s;
+}
+
+.navegacion2 .menu li.titulo-menu{
+	padding: 20px;
+	background: #5f6f81;
+	color: #fff;
+	text-align: center;
+	font-size: 22px;
+}
+
+.navegacion2 .menu a{
+	display: block;
+	padding: 20px;
+	border-bottom: 1px solid #c6d0da;
+
+	font-size: 22px;
+	font-weight: 200;
+	text-decoration: none;
+	color: #575d69;
+}
+
+.navegacion2 .menu a:hover{
+	background: #607ADA;
+	color: #fff;
+	transition: .4s;
+}
+
+.navegacion2 .menu li span.icon-menu{
+	margin-right: 12px;
+}
+
+.navegacion2 .menu .item-submenu > a::after{
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	content: "\f105";
+
+	float: right;
+	color: #c5c5c5;
+}
+
+.navegacion2 .submenu li.titulo-menu{
+	background: #C0BFBF;
+	color: #575d69;
+}
+
+.navegacion2 .submenu li.go-back{
+	padding: 10px 20px;
+	background: #5f6f81;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.navegacion2 .submenu li.go-back::before{
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	content: "\f0d9";
+
+	margin-right: 12px
+}

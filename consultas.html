@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="description" content="PROYECTO FINAL"/>
+<meta name="keywords" content="HTML5, css3, Javascript, Diseño Web"/>
+<title>Bookwedit-Contacto</title>
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="css/consultas.css">
+<link rel="icon" type="image/jpg" href="img/buho.png">
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/consultas.js"></script>
+
+</head>
+<body>
+
+    <section class="form_wrap">
+        <section class="contacto_info">
+            <section class="info_titulo">
+                <span class="fas fa-user-circle"></span>
+                <h2>INFORMACION<br>DE CONTACTO</h2>
+            </section>
+            <section class="info_items">
+                <p><span class="fas fa-envelope"></span> info-contactbook@gmail.com </p>
+                <p><span class="fas fa-mobile"></span> +57 3107345111 </p>
+                <a href="iniciobook.html"><span class="fas fa-house-user"></span> Inicio</a>
+            </section>
+        </section>
+
+        <form action="consultas.php" method="post" class="formulario">
+
+            <h2>Envia un Mensaje</h2>
+
+            <div class="user_info">
+
+                <label for="names"><span class="fas fa-user-alt"></span>Nombres*</label>
+                <input type="text" id="names" name="nombre" required>
+
+                <label for="email"><span class="fas fa-envelope"></span>Correo Electronico*</label>
+                <input type="text" id="email" name="correo" required>
+
+                <label for="phone"><span class="fas fa-mobile"></span>Telefono</label>
+                <input type="text" id="phone" name="telefono">
+
+                <label for="mensaje"><span class="far fa-paper-plane"></span>Mensaje*</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <input type="submit" value="Enviar" id="btnSend">
+
+            </div>
+
+        </form>
+
+    </section>
+
+</body>
+</html>
